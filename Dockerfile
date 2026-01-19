@@ -10,6 +10,8 @@ WORKDIR /app
 COPY package*.json ./
 COPY cli/package*.json ./cli/
 COPY data/package*.json ./data/
+COPY data/*.sql ./data/
+COPY data/*.js ./data/
 COPY server/package*.json ./server/
 COPY dashboard/package*.json ./dashboard/
 
